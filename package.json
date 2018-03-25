@@ -1,0 +1,93 @@
+{
+  "name": "ngx-angular-loading",
+  "version": "1.0.0",
+  "description": "An angular component that lets you to prevent user interaction with part of the page and display loading/busy indicator (spinner based on spin.js) ",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "demo": "cd demo && npm i && ng serve",
+    "lint": "tslint src/**/*.ts",
+    "prebuild": "rimraf dist",
+    "build": "npm run lint && ngc",
+    "postbuild": "npm run prepare-package",
+    "prepare-package": "node scripts/release.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bculley/ngx-angular-loading.git"
+  },
+  "keywords": [
+    "angular2",
+    "angular4",
+    "angular5",
+    "angularx",
+    "ngx",
+    "dialog"
+  ],
+  "author": "Brandon Culley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bculley/ngx-angular-loading/issues"
+  },
+  "homepage": "https://github.com/bculley/ngx-angular-loading#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "lodash-es": "^4.17.4",
+    "spin": "0.0.1"
+  },
+  "peerDependencies": {
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.7.2",
+    "@angular/animations": "^5.2.0",
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "@angular/forms": "^5.2.0",
+    "@angular/http": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/router": "^5.2.0",
+    "@types/jest": "^19.2.4",
+    "@types/jquery": "^1.10.31",
+    "@types/node": "~6.0.60",
+    "awesome-typescript-loader": "^3.4.1",
+    "codelyzer": "^4.0.1",
+    "fs-extra": "^5.0.0",
+    "jest": "^20.0.3",
+    "jest-preset-angular": "^2.0.2",
+    "rimraf": "^2.6.1",
+    "rxjs": "^5.5.6",
+    "tslint": "^5.8.0",
+    "typescript": "^2.3.4",
+    "zone.js": "^0.8.19"
+  },
+  "jest": {
+    "projects": [
+      "<rootDir>"
+    ],
+    "preset": "jest-preset-angular",
+    "setupTestFrameworkScriptFile": "<rootDir>/src/tests/jest.ts",
+    "transformIgnorePatterns": [
+      "node_modules/(?!lodash-es)"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "src/tsconfig.spec.json"
+      }
+    },
+    "transform": {
+      "^.+\\.(ts|js|html)$": "<rootDir>/node_modules/jest-preset-angular/preprocessor.js"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "html"
+    ]
+  }
+}

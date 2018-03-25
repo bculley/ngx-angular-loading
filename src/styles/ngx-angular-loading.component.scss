@@ -1,0 +1,47 @@
+[ngxLoading] {
+    position: relative;
+}
+
+.ngx-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: none;
+}
+
+.ngx-loading:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.ngx-loading.ngx-loading-active {
+    display: block;
+}
+
+.ngx-loading.ngx-loading-overlay {
+    background-color: rgba(255, 255, 255, .7);
+    z-index: 9999;
+}
+
+.ngx-loading > .ngx-loading-body {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.ngx-loading > .ngx-loading-body > .ngx-loading-spinner {
+    position: relative;
+}
+
+.ngx-loading > .ngx-loading-body > .ngx-loading-text {
+    position: relative;
+    top: 25px;
+    font-weight: bold;
+    font-size: 11px;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+}
