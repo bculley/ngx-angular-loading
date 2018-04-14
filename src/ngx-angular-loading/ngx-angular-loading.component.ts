@@ -129,7 +129,7 @@ export class NGXLoadingDirective implements OnChanges, OnDestroy {
             this.renderer.addClass(this.container, 'ngx-loading-active');
         }
         if (this.spinner) {
-            this.spinner.spin(this.spinnerContainer[0]);
+            this.spinner.spin(this.spinnerContainer);
         }
     }
 
