@@ -9,11 +9,13 @@ import { NGXLoadingDirective } from './ngx-angular-loading.component';
         NGXLoadingDirective
     ],
     exports: [
-        NGXLoadingDirective,
-        NGXLoadingService
+        NGXLoadingDirective
     ],
     imports: [
         CommonModule
+    ],
+    providers: [
+        NGXLoadingService
     ]
 })
 export class NGXLoadingModule {
