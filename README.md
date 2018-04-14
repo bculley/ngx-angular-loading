@@ -1,4 +1,5 @@
-# NGX Angular Loading [![Build Status](https://travis-ci.org/bculley/ngx-angular-loading.svg?branch=master)](https://travis-ci.org/bculley/ngx-angular-loading)
+# NGX Angular Loading
+[![Build Status](https://travis-ci.org/bculley/ngx-angular-loading.svg?branch=master)](https://travis-ci.org/bculley/ngx-angular-loading) [![NPM version](https://img.shields.io/npm/v/ngx-angular-loading.svg)](https://www.npmjs.com/package/ngx-angular-loading)
 
 It is a library to makes loading screens easier in Angular (2+)
 
