@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NGXLoadingService } from 'ngx-angular-loading/src/ngx-angular-loading/ngx-angular-loading.service';
+import { NGXLoadingService } from 'ngx-angular-loading';
 
 @Component({
   selector: 'app-root',

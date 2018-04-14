@@ -29,7 +29,7 @@ npm install ngx-angular-loading
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { NGXLoadingModule } from 'ngx-angular-loading/src/ngx-angular-loading/ngx-angular-loading.module';
+import { NGXLoadingModule } from 'ngx-angular-loading';
 @NgModule({
   declarations: [
     AppComponent
@@ -50,7 +50,7 @@ You may use *$loading* for legacy or rename your references to ngxLoadingService
 
 ```ts
 import { Component } from '@angular/core';
-import { NGXLoadingService } from 'ngx-angular-loading/src/ngx-angular-loading/ngx-angular-loading.service';
+import { NGXLoadingService } from 'ngx-angular-loading';
 
 @Component({
   selector: 'app-root',

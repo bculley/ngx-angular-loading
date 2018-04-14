@@ -59,34 +59,27 @@ export class NGXLoadingDirective implements OnChanges, OnDestroy {
             // Build template
             this.body = this.newDiv('ngx-loading-body');
 
-            // this.container = this.newDiv('ngx-loading').append(this.body);
             this.container = this.newDiv('ngx-loading');
             this.renderer.appendChild(this.container, this.body);
 
             if (this.options.overlay) {
-                // this.container.addClass('ngx-loading-overlay');
                 this.renderer.addClass(this.container, 'ngx-loading-overlay');
             }
             if (this.options.className) {
-                // this.container.addClass(this.options.className);
                 this.renderer.addClass(this.container, this.options.className);
             }
             if (this.options.spinner) {
                 this.spinnerContainer = this.newDiv('ngx-loading-spinner');
-                // this.body.append(this.spinnerContainer);
                 this.renderer.appendChild(this.body, this.spinnerContainer);
                 this.spinner = new Spinner(this.options.spinnerOptions);
             }
             if (this.options.text) {
-                // this.text = this.newDiv('ngx-loading-text').text(this.options.text);
                 this.text = this.newDiv('ngx-loading-text');
                 const mytext = this.renderer.createText(this.options.text);
-                // this.body.append(this.text);
                 this.renderer.appendChild(this.text, mytext);
                 this.renderer.appendChild(this.body, this.text);
             }
 
-            // $(this.myElement.nativeElement).append(this.container);
             this.renderer.appendChild(this.myElement.nativeElement, this.container);
 
             if (this.options.active || !this.key) {
@@ -113,7 +106,6 @@ export class NGXLoadingDirective implements OnChanges, OnDestroy {
     }
 
     newDiv(className: string) {
-        // return $('<div></div>').addClass(className);
         let change_this;
         change_this = this.renderer.createElement('div');
         this.renderer.addClass(change_this, className);
@@ -125,7 +117,6 @@ export class NGXLoadingDirective implements OnChanges, OnDestroy {
      */
     start() {
         if (this.container) {
-            // this.container.addClass('ngx-loading-active');
             this.renderer.addClass(this.container, 'ngx-loading-active');
         }
         if (this.spinner) {
@@ -138,7 +129,6 @@ export class NGXLoadingDirective implements OnChanges, OnDestroy {
      */
     finish() {
         if (this.container) {
-            // this.container.removeClass('ngx-loading-active');
             this.renderer.removeClass(this.container, 'ngx-loading-active');
         }
         if (this.spinner) {
