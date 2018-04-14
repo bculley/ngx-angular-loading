@@ -46,7 +46,7 @@ export class AppModule { }
 
 ## Step 2. Include NGXLoadingService in your component
 Use the service to *start* and *finish* the different loading screens
-You may use *$loading* for legacy or rename your references to ngxLoadingService
+You may use *$loading* for legacy or rename your references to ngxLoadingService.
 
 ```ts
 import { Component } from '@angular/core';
