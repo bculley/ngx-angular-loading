@@ -4,7 +4,7 @@
   "description": "An angular component that lets you to prevent user interaction with part of the page and display loading/busy indicator (spinner based on spin.js) ",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "demo": "cd demo && npm i && ng serve",
     "lint": "tslint src/**/*.ts",
