@@ -8,7 +8,7 @@ delete packagejson.devDependencies;
 
 packagejson.main = patchPath(packagejson.main);
 packagejson.module = patchPath(packagejson.module);
-packagejson.typings = patchPath(packagejson.typings);
+packagejson.types = patchPath(packagejson.types);
 
 try {
   fs.writeJsonSync('dist/package.json', packagejson, {spaces: '   '});
